@@ -1,0 +1,53 @@
+.item-container {
+  padding: 8px 8px 0px 8px;
+}
+
+.item-container+.item-container {
+  margin-top: 9px;
+}
+
+.item-container>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E8A634;
+}
+
+.item-container>div .info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.item-container>div .info span {
+  color: #4E4E4E;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.item-container>div .info span:last-child {
+  color: #F09035;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.item-container>div .quantity-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #F09035;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.item-container>div .quantity-button button {
+  background: none;
+  border: none;
+}
+
+.item-container>div .quantity-button span {
+  margin: 0px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4E4E4E;
+}

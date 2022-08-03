@@ -1,0 +1,33 @@
+.aside-container {
+  width: 100%;
+  max-width: 439px;
+  border: 1px solid #686868;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.aside-container>header {
+  background-color: rgba(253, 215, 14, 0.2);
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+
+.aside-container>header h1 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4E4E4E;
+  margin-bottom: 4px;
+}
+
+.aside-container>header h2 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #E49700;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding: 0px 8px;
+}
+
+.aside-container footer {}

@@ -1,0 +1,40 @@
+.burger-section {
+  width: 100%;
+  max-width: 597px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f4f4f4;
+  padding: 24px 0px;
+}
+
+.burger-section>h1 {
+  color: #4E4E4E;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 32px 0px;
+}
+
+.burger-section p {
+  color: #4E4E4E;
+  font-size: 20px;
+  margin-bottom: 38px;
+}
+
+.prices-container {
+  display: flex;
+  gap: 16px;
+
+}
+
+.price {
+  font-size: 32px;
+  color: #DC6E05;
+  font-weight: 400;
+}
+
+.price.old {
+  color: #4E4E4E;
+  text-decoration: line-through;
+}
