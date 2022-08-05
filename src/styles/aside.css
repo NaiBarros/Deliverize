@@ -6,20 +6,25 @@
   padding: 32px;
 }
 
-.aside-container>header {
+.aside-container>div {
+  max-height: 537px;
+  overflow-y: scroll;
+}
+
+.aside-container div>header {
   background-color: rgba(253, 215, 14, 0.2);
   padding: 8px 16px;
   margin-bottom: 16px;
 }
 
-.aside-container>header h1 {
+.aside-container div>header h1 {
   font-size: 14px;
   font-weight: 500;
   color: #4E4E4E;
   margin-bottom: 4px;
 }
 
-.aside-container>header h2 {
+.aside-container div>header h2 {
   font-size: 12px;
   font-weight: 400;
   color: #E49700;
@@ -30,4 +35,91 @@
   padding: 0px 8px;
 }
 
-.aside-container footer {}
+.aside-container>div>div {
+  background-color: rgba(253, 215, 14, 0.2);
+  color: #4E4E4E;
+  font-size: 14px;
+  font-weight: 500;
+  height: 55px;
+  padding: 8px 16px;
+  margin-top: 9px;
+}
+
+.aside-container>div>label {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4E4E4E;
+}
+
+.aside-container footer {
+  margin-top: 21px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-container footer>button {
+  height: 40px;
+  width: 219px;
+  background-color: #F09035;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.aside-container footer .quantity-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #F09035;
+  border-radius: 5px;
+  padding: 4px;
+  width: 140px;
+}
+
+.aside-container footer .quantity-button button {
+  background: none;
+  border: none;
+}
+
+.aside-container footer .quantity-button span {
+  margin: 0px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4E4E4E;
+}
+
+@media (max-width: 375px) {
+  .aside-container {
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+  }
+
+  .aside-container>div {
+    max-height: unset;
+    overflow-y: unset;
+    padding: 16px 0px;
+  }
+
+  .aside-container>div header {
+    margin-bottom: 8px;
+  }
+
+  .aside-container>div .ingredients-list {
+    padding: 0px;
+  }
+
+  .aside-container footer {
+    margin-top: 32px;
+    gap: 8px;
+  }
+
+  .aside-container>div>div {
+    margin-top: 0px;
+  }
+}

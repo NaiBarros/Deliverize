@@ -51,3 +51,9 @@
   font-weight: 400;
   color: #4E4E4E;
 }
+
+@media (max-width: 375px) {
+  .item-container:last-child>div {
+    border: none;
+  }
+}

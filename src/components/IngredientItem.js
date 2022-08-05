@@ -2,25 +2,28 @@ import "../styles/ingredientItem.css"
 
 import minus from "../assets/icons/minus.svg"
 import plus from "../assets/icons/plus.svg"
+import { useState } from "react"
 
-function IngredientItem() {
+function IngredientItem(props) {
+  const [quantity, setQuantity] = useState(0)
+
   return (
     <li className="item-container">
       <div>
         <div className="info">
           <span>
-            Queijo cheddar
+            {props.title}
           </span>
           <span>
-            + R$4,99
+            + R${props.price}
           </span>
         </div>
         <div className="quantity-button">
-          <button>
+          <button onClick={() => quantity !== 0 && setQuantity(quantity - 1)}>
             <img src={minus} alt="Diminuir quantidade" />
           </button>
-          <span>2</span>
-          <button>
+          <span>{quantity}</span>
+          <button onClick={() => setQuantity(quantity + 1)}>
             <img src={plus} alt="Aumentar quantidade" />
           </button>
         </div>

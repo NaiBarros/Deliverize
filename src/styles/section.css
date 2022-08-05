@@ -1,11 +1,8 @@
 .burger-section {
   width: 100%;
   max-width: 597px;
-
   display: flex;
   flex-direction: column;
-
-  background-color: #f4f4f4;
   padding: 24px 0px;
 }
 
@@ -37,4 +34,30 @@
 .price.old {
   color: #4E4E4E;
   text-decoration: line-through;
+}
+
+@media (max-width: 375px) {
+  .burger-section {
+    margin-bottom: 16px;
+    padding: 0px;
+  }
+
+  .burger-section img {
+    width: 160px;
+    margin: 0 auto;
+  }
+
+  .burger-section>h1 {
+    margin: 32px 0px 24px 0px;
+    font-size: 18px;
+  }
+
+  .burger-section>p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .burger-section .price {
+    font-size: 14px;
+  }
 }
